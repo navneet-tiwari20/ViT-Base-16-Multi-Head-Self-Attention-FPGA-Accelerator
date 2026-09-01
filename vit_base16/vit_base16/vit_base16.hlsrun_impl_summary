@@ -1,0 +1,274 @@
+<ENTRY>
+{
+ "thisFile": "C:/projects\\vit_base16\\vit_base16\\vit_base16\\vit_base16.hlsrun_impl_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "08/26/26 16:34:23",
+ "timestampMillis": "1787742263170",
+ "buildStep": {
+  "cmdId": "92b4b48d-e368-42c8-8714-fc440981f8ec",
+  "name": "vitis-run",
+  "logFile": "C:/projects\\vit_base16\\vit_base16\\vit_base16\\logs\\vit_base16.steps.log",
+  "commandLine": "C:/AMDDesignTools/2025.2/Vitis/bin/unwrapped/win64.o/vitis-run.exe  --mode hls --impl --config C:\\projects\\vit_base16\\vit_base16\\hls_config.cfg --work_dir vit_base16 ",
+  "args": [
+   "--mode",
+   "hls",
+   "--impl",
+   "--config",
+   "C:\\projects\\vit_base16\\vit_base16\\hls_config.cfg",
+   "--work_dir",
+   "vit_base16"
+  ],
+  "iniFiles": [],
+  "cwd": "C:\\projects\\vit_base16\\vit_base16"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "08/26/26 16:34:23",
+ "timestampMillis": "1787742263171",
+ "status": {
+  "cmdId": "92b4b48d-e368-42c8-8714-fc440981f8ec",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "08/26/26 16:34:30",
+ "timestampMillis": "1787742270081",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_IMPL",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "mhsa_top",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "C:/projects\\vit_base16\\vit_base16\\attention_config.h",
+     "C:/projects\\vit_base16\\vit_base16\\attention_top.cpp",
+     "C:/projects\\vit_base16\\vit_base16\\attention_top.h",
+     "C:/projects\\vit_base16\\vit_base16\\online_attention.h",
+     "C:/projects\\vit_base16\\vit_base16\\pwl_exp.h",
+     "C:/projects\\vit_base16\\vit_base16\\mhsa_top.h",
+     "C:/projects\\vit_base16\\vit_base16\\mhsa_top.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2025.2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "08/26/26 16:34:30",
+ "timestampMillis": "1787742270083",
+ "buildStep": {
+  "cmdId": "4aa476b3-8e08-4aa9-a39c-8c9b0b2c229d",
+  "name": "",
+  "logFile": "C:/projects\\vit_base16\\vit_base16\\vit_base16\\hls\\hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "C:\\projects\\vit_base16\\vit_base16"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "08/26/26 16:34:30",
+ "timestampMillis": "1787742270083",
+ "status": {
+  "cmdId": "4aa476b3-8e08-4aa9-a39c-8c9b0b2c229d",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "08/26/26 16:34:30",
+ "timestampMillis": "1787742270085",
+ "report": {
+  "path": "C:/projects\\vit_base16\\vit_base16\\vit_base16\\hls\\impl\\verilog",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_RTL_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "08/26/26 16:34:30",
+ "timestampMillis": "1787742270086",
+ "report": {
+  "path": "C:/projects\\vit_base16\\vit_base16\\vit_base16\\hls\\impl\\report\\verilog\\export_syn.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_RTL_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "08/26/26 16:34:30",
+ "timestampMillis": "1787742270087",
+ "report": {
+  "path": "C:/projects\\vit_base16\\vit_base16\\vit_base16\\hls\\impl\\report\\verilog\\export_syn.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "HLS_RTL_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "08/26/26 16:34:30",
+ "timestampMillis": "1787742270087",
+ "report": {
+  "path": "C:/projects\\vit_base16\\vit_base16\\vit_base16\\hls\\impl\\verilog",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_PLACE_AND_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "08/26/26 16:34:30",
+ "timestampMillis": "1787742270088",
+ "report": {
+  "path": "C:/projects\\vit_base16\\vit_base16\\vit_base16\\hls\\impl\\report\\verilog\\export_impl.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_PLACE_AND_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "08/26/26 16:34:30",
+ "timestampMillis": "1787742270088",
+ "report": {
+  "path": "C:/projects\\vit_base16\\vit_base16\\vit_base16\\hls\\impl\\report\\verilog\\export_impl.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "HLS_PLACE_AND_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "08/26/26 17:09:14",
+ "timestampMillis": "1787744354048",
+ "report": {
+  "path": "C:/projects\\vit_base16\\vit_base16\\vit_base16\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_RTL_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "08/26/26 17:09:14",
+ "timestampMillis": "1787744354069",
+ "report": {
+  "path": "C:/projects\\vit_base16\\vit_base16\\vit_base16\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_PLACE_AND_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "08/26/26 17:09:14",
+ "timestampMillis": "1787744354070",
+ "status": {
+  "cmdId": "4aa476b3-8e08-4aa9-a39c-8c9b0b2c229d",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "08/26/26 17:09:14",
+ "timestampMillis": "1787744354580",
+ "status": {
+  "cmdId": "92b4b48d-e368-42c8-8714-fc440981f8ec",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "08/26/26 17:09:14",
+ "timestampMillis": "1787744354588",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "08/26/26 17:09:14",
+ "timestampMillis": "1787744354588",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

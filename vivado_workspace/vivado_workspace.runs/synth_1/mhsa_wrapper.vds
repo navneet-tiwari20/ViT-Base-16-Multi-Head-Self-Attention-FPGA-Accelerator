@@ -1,0 +1,376 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Wed Aug 26 20:36:38 2026
+# Process ID         : 14188
+# Current directory  : C:/projects/vit_base16/vivado_workspace/vivado_workspace.runs/synth_1
+# Command line       : vivado.exe -log mhsa_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source mhsa_wrapper.tcl
+# Log file           : C:/projects/vit_base16/vivado_workspace/vivado_workspace.runs/synth_1/mhsa_wrapper.vds
+# Journal file       : C:/projects/vit_base16/vivado_workspace/vivado_workspace.runs/synth_1\vivado.jou
+# Running On         : NAV
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : 12th Gen Intel(R) Core(TM) i5-12450H
+# CPU Frequency      : 2496 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 12
+# Host memory        : 8212 MB
+# Swap memory        : 24673 MB
+# Total Virtual      : 32886 MB
+# Available Virtual  : 17815 MB
+#-----------------------------------------------------------
+source mhsa_wrapper.tcl -notrace
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 559.715 ; gain = 227.000
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/projects/vit_base16/vit_base16/vit_base16/hls/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/AMDDesignTools/2025.2/Vivado/data/ip'.
+add_files: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 611.395 ; gain = 47.668
+Command: read_checkpoint -auto_incremental -incremental C:/projects/vit_base16/vivado_workspace/vivado_workspace.srcs/utils_1/imports/synth_1/mhsa_wrapper.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/projects/vit_base16/vivado_workspace/vivado_workspace.srcs/utils_1/imports/synth_1/mhsa_wrapper.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top mhsa_wrapper -part xczu7ev-ffvc1156-2-e
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu7ev'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu7ev'
+INFO: [Device 21-403] Loading part xczu7ev-ffvc1156-2-e
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 8440
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2063.996 ; gain = 218.223
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'mhsa_wrapper' [C:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/hdl/mhsa_wrapper.v:13]
+INFO: [Synth 8-6157] synthesizing module 'mhsa' [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/synth/mhsa.v:13]
+INFO: [Synth 8-6157] synthesizing module 'mhsa_mhsa_top_0_0' [C:/projects/vit_base16/vivado_workspace/vivado_workspace.runs/synth_1/.Xil/Vivado-14188-NAV/realtime/mhsa_mhsa_top_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'mhsa_mhsa_top_0_0' (0#1) [C:/projects/vit_base16/vivado_workspace/vivado_workspace.runs/synth_1/.Xil/Vivado-14188-NAV/realtime/mhsa_mhsa_top_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'interrupt' of module 'mhsa_mhsa_top_0_0' is unconnected for instance 'mhsa_top_0' [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/synth/mhsa.v:211]
+WARNING: [Synth 8-7071] port 'm_axi_gmem_q_ARREGION' of module 'mhsa_mhsa_top_0_0' is unconnected for instance 'mhsa_top_0' [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/synth/mhsa.v:211]
+WARNING: [Synth 8-7071] port 'm_axi_gmem_q_AWADDR' of module 'mhsa_mhsa_top_0_0' is unconnected for instance 'mhsa_top_0' [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/synth/mhsa.v:211]
+WARNING: [Synth 8-7071] port 'm_axi_gmem_q_AWBURST' of module 'mhsa_mhsa_top_0_0' is unconnected for instance 'mhsa_top_0' [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/synth/mhsa.v:211]
+WARNING: [Synth 8-7071] port 'm_axi_gmem_q_AWCACHE' of module 'mhsa_mhsa_top_0_0' is unconnected for instance 'mhsa_top_0' [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/synth/mhsa.v:211]
+WARNING: [Synth 8-7071] port 'm_axi_gmem_q_AWID' of module 'mhsa_mhsa_top_0_0' is unconnected for instance 'mhsa_top_0' [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/synth/mhsa.v:211]
+WARNING: [Synth 8-7071] port 'm_axi_gmem_q_AWLEN' of module 'mhsa_mhsa_top_0_0' is unconnected for instance 'mhsa_top_0' [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/synth/mhsa.v:211]
+WARNING: [Synth 8-7071] port 'm_axi_gmem_q_AWLOCK' of module 'mhsa_mhsa_top_0_0' is unconnected for instance 'mhsa_top_0' [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/synth/mhsa.v:211]
+WARNING: [Synth 8-7071] port 'm_axi_gmem_q_AWPROT' of module 'mhsa_mhsa_top_0_0' is unconnected for instance 'mhsa_top_0' [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/synth/mhsa.v:211]
+WARNING: [Synth 8-7071] port 'm_axi_gmem_q_AWQOS' of module 'mhsa_mhsa_top_0_0' is unconnected for instance 'mhsa_top_0' [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/synth/mhsa.v:211]
+WARNING: [Synth 8-7071] port 'm_axi_gmem_q_AWREGION' of module 'mhsa_mhsa_top_0_0' is unconnected for instance 'mhsa_top_0' [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/synth/mhsa.v:211]
+WARNING: [Synth 8-7071] port 'm_axi_gmem_q_AWSIZE' of module 'mhsa_mhsa_top_0_0' is unconnected for instance 'mhsa_top_0' [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/synth/mhsa.v:211]
+WARNING: [Synth 8-7071] port 'm_axi_gmem_q_AWVALID' of module 'mhsa_mhsa_top_0_0' is unconnected for instance 'mhsa_top_0' [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/synth/mhsa.v:211]
+WARNING: [Synth 8-7071] port 'm_axi_gmem_q_BREADY' of module 'mhsa_mhsa_top_0_0' is unconnected for instance 'mhsa_top_0' [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/synth/mhsa.v:211]
+WARNING: [Synth 8-7071] port 'm_axi_gmem_q_WDATA' of module 'mhsa_mhsa_top_0_0' is unconnected for instance 'mhsa_top_0' [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/synth/mhsa.v:211]
+WARNING: [Synth 8-7071] port 'm_axi_gmem_q_WID' of module 'mhsa_mhsa_top_0_0' is unconnected for instance 'mhsa_top_0' [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/synth/mhsa.v:211]
+WARNING: [Synth 8-7071] port 'm_axi_gmem_q_WLAST' of module 'mhsa_mhsa_top_0_0' is unconnected for instance 'mhsa_top_0' [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/synth/mhsa.v:211]
+WARNING: [Synth 8-7071] port 'm_axi_gmem_q_WSTRB' of module 'mhsa_mhsa_top_0_0' is unconnected for instance 'mhsa_top_0' [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/synth/mhsa.v:211]
+WARNING: [Synth 8-7071] port 'm_axi_gmem_q_WVALID' of module 'mhsa_mhsa_top_0_0' is unconnected for instance 'mhsa_top_0' [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/synth/mhsa.v:211]
+WARNING: [Synth 8-7071] port 'm_axi_gmem_k_ARREGION' of module 'mhsa_mhsa_top_0_0' is unconnected for instance 'mhsa_top_0' [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/synth/mhsa.v:211]
+WARNING: [Synth 8-7071] port 'm_axi_gmem_k_AWADDR' of module 'mhsa_mhsa_top_0_0' is unconnected for instance 'mhsa_top_0' [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/synth/mhsa.v:211]
+WARNING: [Synth 8-7071] port 'm_axi_gmem_k_AWBURST' of module 'mhsa_mhsa_top_0_0' is unconnected for instance 'mhsa_top_0' [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/synth/mhsa.v:211]
+WARNING: [Synth 8-7071] port 'm_axi_gmem_k_AWCACHE' of module 'mhsa_mhsa_top_0_0' is unconnected for instance 'mhsa_top_0' [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/synth/mhsa.v:211]
+WARNING: [Synth 8-7071] port 'm_axi_gmem_k_AWID' of module 'mhsa_mhsa_top_0_0' is unconnected for instance 'mhsa_top_0' [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/synth/mhsa.v:211]
+WARNING: [Synth 8-7071] port 'm_axi_gmem_k_AWLEN' of module 'mhsa_mhsa_top_0_0' is unconnected for instance 'mhsa_top_0' [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/synth/mhsa.v:211]
+WARNING: [Synth 8-7071] port 'm_axi_gmem_k_AWLOCK' of module 'mhsa_mhsa_top_0_0' is unconnected for instance 'mhsa_top_0' [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/synth/mhsa.v:211]
+WARNING: [Synth 8-7071] port 'm_axi_gmem_k_AWPROT' of module 'mhsa_mhsa_top_0_0' is unconnected for instance 'mhsa_top_0' [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/synth/mhsa.v:211]
+WARNING: [Synth 8-7071] port 'm_axi_gmem_k_AWQOS' of module 'mhsa_mhsa_top_0_0' is unconnected for instance 'mhsa_top_0' [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/synth/mhsa.v:211]
+WARNING: [Synth 8-7071] port 'm_axi_gmem_k_AWREGION' of module 'mhsa_mhsa_top_0_0' is unconnected for instance 'mhsa_top_0' [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/synth/mhsa.v:211]
+WARNING: [Synth 8-7071] port 'm_axi_gmem_k_AWSIZE' of module 'mhsa_mhsa_top_0_0' is unconnected for instance 'mhsa_top_0' [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/synth/mhsa.v:211]
+WARNING: [Synth 8-7071] port 'm_axi_gmem_k_AWVALID' of module 'mhsa_mhsa_top_0_0' is unconnected for instance 'mhsa_top_0' [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/synth/mhsa.v:211]
+WARNING: [Synth 8-7071] port 'm_axi_gmem_k_BREADY' of module 'mhsa_mhsa_top_0_0' is unconnected for instance 'mhsa_top_0' [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/synth/mhsa.v:211]
+WARNING: [Synth 8-7071] port 'm_axi_gmem_k_WDATA' of module 'mhsa_mhsa_top_0_0' is unconnected for instance 'mhsa_top_0' [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/synth/mhsa.v:211]
+WARNING: [Synth 8-7071] port 'm_axi_gmem_k_WID' of module 'mhsa_mhsa_top_0_0' is unconnected for instance 'mhsa_top_0' [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/synth/mhsa.v:211]
+WARNING: [Synth 8-7071] port 'm_axi_gmem_k_WLAST' of module 'mhsa_mhsa_top_0_0' is unconnected for instance 'mhsa_top_0' [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/synth/mhsa.v:211]
+WARNING: [Synth 8-7071] port 'm_axi_gmem_k_WSTRB' of module 'mhsa_mhsa_top_0_0' is unconnected for instance 'mhsa_top_0' [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/synth/mhsa.v:211]
+WARNING: [Synth 8-7071] port 'm_axi_gmem_k_WVALID' of module 'mhsa_mhsa_top_0_0' is unconnected for instance 'mhsa_top_0' [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/synth/mhsa.v:211]
+WARNING: [Synth 8-7071] port 'm_axi_gmem_v_ARREGION' of module 'mhsa_mhsa_top_0_0' is unconnected for instance 'mhsa_top_0' [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/synth/mhsa.v:211]
+WARNING: [Synth 8-7071] port 'm_axi_gmem_v_AWADDR' of module 'mhsa_mhsa_top_0_0' is unconnected for instance 'mhsa_top_0' [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/synth/mhsa.v:211]
+WARNING: [Synth 8-7071] port 'm_axi_gmem_v_AWBURST' of module 'mhsa_mhsa_top_0_0' is unconnected for instance 'mhsa_top_0' [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/synth/mhsa.v:211]
+WARNING: [Synth 8-7071] port 'm_axi_gmem_v_AWCACHE' of module 'mhsa_mhsa_top_0_0' is unconnected for instance 'mhsa_top_0' [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/synth/mhsa.v:211]
+WARNING: [Synth 8-7071] port 'm_axi_gmem_v_AWID' of module 'mhsa_mhsa_top_0_0' is unconnected for instance 'mhsa_top_0' [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/synth/mhsa.v:211]
+WARNING: [Synth 8-7071] port 'm_axi_gmem_v_AWLEN' of module 'mhsa_mhsa_top_0_0' is unconnected for instance 'mhsa_top_0' [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/synth/mhsa.v:211]
+WARNING: [Synth 8-7071] port 'm_axi_gmem_v_AWLOCK' of module 'mhsa_mhsa_top_0_0' is unconnected for instance 'mhsa_top_0' [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/synth/mhsa.v:211]
+WARNING: [Synth 8-7071] port 'm_axi_gmem_v_AWPROT' of module 'mhsa_mhsa_top_0_0' is unconnected for instance 'mhsa_top_0' [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/synth/mhsa.v:211]
+WARNING: [Synth 8-7071] port 'm_axi_gmem_v_AWQOS' of module 'mhsa_mhsa_top_0_0' is unconnected for instance 'mhsa_top_0' [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/synth/mhsa.v:211]
+WARNING: [Synth 8-7071] port 'm_axi_gmem_v_AWREGION' of module 'mhsa_mhsa_top_0_0' is unconnected for instance 'mhsa_top_0' [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/synth/mhsa.v:211]
+WARNING: [Synth 8-7071] port 'm_axi_gmem_v_AWSIZE' of module 'mhsa_mhsa_top_0_0' is unconnected for instance 'mhsa_top_0' [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/synth/mhsa.v:211]
+WARNING: [Synth 8-7071] port 'm_axi_gmem_v_AWVALID' of module 'mhsa_mhsa_top_0_0' is unconnected for instance 'mhsa_top_0' [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/synth/mhsa.v:211]
+WARNING: [Synth 8-7071] port 'm_axi_gmem_v_BREADY' of module 'mhsa_mhsa_top_0_0' is unconnected for instance 'mhsa_top_0' [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/synth/mhsa.v:211]
+WARNING: [Synth 8-7071] port 'm_axi_gmem_v_WDATA' of module 'mhsa_mhsa_top_0_0' is unconnected for instance 'mhsa_top_0' [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/synth/mhsa.v:211]
+WARNING: [Synth 8-7071] port 'm_axi_gmem_v_WID' of module 'mhsa_mhsa_top_0_0' is unconnected for instance 'mhsa_top_0' [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/synth/mhsa.v:211]
+WARNING: [Synth 8-7071] port 'm_axi_gmem_v_WLAST' of module 'mhsa_mhsa_top_0_0' is unconnected for instance 'mhsa_top_0' [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/synth/mhsa.v:211]
+WARNING: [Synth 8-7071] port 'm_axi_gmem_v_WSTRB' of module 'mhsa_mhsa_top_0_0' is unconnected for instance 'mhsa_top_0' [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/synth/mhsa.v:211]
+WARNING: [Synth 8-7071] port 'm_axi_gmem_v_WVALID' of module 'mhsa_mhsa_top_0_0' is unconnected for instance 'mhsa_top_0' [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/synth/mhsa.v:211]
+WARNING: [Synth 8-7071] port 'm_axi_gmem_o_ARADDR' of module 'mhsa_mhsa_top_0_0' is unconnected for instance 'mhsa_top_0' [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/synth/mhsa.v:211]
+WARNING: [Synth 8-7071] port 'm_axi_gmem_o_ARBURST' of module 'mhsa_mhsa_top_0_0' is unconnected for instance 'mhsa_top_0' [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/synth/mhsa.v:211]
+WARNING: [Synth 8-7071] port 'm_axi_gmem_o_ARCACHE' of module 'mhsa_mhsa_top_0_0' is unconnected for instance 'mhsa_top_0' [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/synth/mhsa.v:211]
+WARNING: [Synth 8-7071] port 'm_axi_gmem_o_ARID' of module 'mhsa_mhsa_top_0_0' is unconnected for instance 'mhsa_top_0' [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/synth/mhsa.v:211]
+WARNING: [Synth 8-7071] port 'm_axi_gmem_o_ARLEN' of module 'mhsa_mhsa_top_0_0' is unconnected for instance 'mhsa_top_0' [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/synth/mhsa.v:211]
+WARNING: [Synth 8-7071] port 'm_axi_gmem_o_ARLOCK' of module 'mhsa_mhsa_top_0_0' is unconnected for instance 'mhsa_top_0' [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/synth/mhsa.v:211]
+WARNING: [Synth 8-7071] port 'm_axi_gmem_o_ARPROT' of module 'mhsa_mhsa_top_0_0' is unconnected for instance 'mhsa_top_0' [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/synth/mhsa.v:211]
+WARNING: [Synth 8-7071] port 'm_axi_gmem_o_ARQOS' of module 'mhsa_mhsa_top_0_0' is unconnected for instance 'mhsa_top_0' [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/synth/mhsa.v:211]
+WARNING: [Synth 8-7071] port 'm_axi_gmem_o_ARREGION' of module 'mhsa_mhsa_top_0_0' is unconnected for instance 'mhsa_top_0' [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/synth/mhsa.v:211]
+WARNING: [Synth 8-7071] port 'm_axi_gmem_o_ARSIZE' of module 'mhsa_mhsa_top_0_0' is unconnected for instance 'mhsa_top_0' [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/synth/mhsa.v:211]
+WARNING: [Synth 8-7071] port 'm_axi_gmem_o_ARVALID' of module 'mhsa_mhsa_top_0_0' is unconnected for instance 'mhsa_top_0' [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/synth/mhsa.v:211]
+WARNING: [Synth 8-7071] port 'm_axi_gmem_o_AWREGION' of module 'mhsa_mhsa_top_0_0' is unconnected for instance 'mhsa_top_0' [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/synth/mhsa.v:211]
+WARNING: [Synth 8-7071] port 'm_axi_gmem_o_RREADY' of module 'mhsa_mhsa_top_0_0' is unconnected for instance 'mhsa_top_0' [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/synth/mhsa.v:211]
+WARNING: [Synth 8-7071] port 'm_axi_gmem_o_WID' of module 'mhsa_mhsa_top_0_0' is unconnected for instance 'mhsa_top_0' [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/synth/mhsa.v:211]
+WARNING: [Synth 8-7023] instance 'mhsa_top_0' of module 'mhsa_mhsa_top_0_0' has 180 connections declared, but only 111 given [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/synth/mhsa.v:211]
+INFO: [Synth 8-6157] synthesizing module 'mhsa_proc_sys_reset_0_0' [C:/projects/vit_base16/vivado_workspace/vivado_workspace.runs/synth_1/.Xil/Vivado-14188-NAV/realtime/mhsa_proc_sys_reset_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'mhsa_proc_sys_reset_0_0' (0#1) [C:/projects/vit_base16/vivado_workspace/vivado_workspace.runs/synth_1/.Xil/Vivado-14188-NAV/realtime/mhsa_proc_sys_reset_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'mhsa_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/synth/mhsa.v:323]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'mhsa_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/synth/mhsa.v:323]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'mhsa_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/synth/mhsa.v:323]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'mhsa_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/synth/mhsa.v:323]
+WARNING: [Synth 8-7023] instance 'proc_sys_reset_0' of module 'mhsa_proc_sys_reset_0_0' has 10 connections declared, but only 6 given [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/synth/mhsa.v:323]
+INFO: [Synth 8-6157] synthesizing module 'mhsa_smartconnect_0_0' [C:/projects/vit_base16/vivado_workspace/vivado_workspace.runs/synth_1/.Xil/Vivado-14188-NAV/realtime/mhsa_smartconnect_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'mhsa_smartconnect_0_0' (0#1) [C:/projects/vit_base16/vivado_workspace/vivado_workspace.runs/synth_1/.Xil/Vivado-14188-NAV/realtime/mhsa_smartconnect_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'mhsa_smartconnect_1_0' [C:/projects/vit_base16/vivado_workspace/vivado_workspace.runs/synth_1/.Xil/Vivado-14188-NAV/realtime/mhsa_smartconnect_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'mhsa_smartconnect_1_0' (0#1) [C:/projects/vit_base16/vivado_workspace/vivado_workspace.runs/synth_1/.Xil/Vivado-14188-NAV/realtime/mhsa_smartconnect_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'mhsa_smartconnect_2_0' [C:/projects/vit_base16/vivado_workspace/vivado_workspace.runs/synth_1/.Xil/Vivado-14188-NAV/realtime/mhsa_smartconnect_2_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'mhsa_smartconnect_2_0' (0#1) [C:/projects/vit_base16/vivado_workspace/vivado_workspace.runs/synth_1/.Xil/Vivado-14188-NAV/realtime/mhsa_smartconnect_2_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'mhsa_smartconnect_3_0' [C:/projects/vit_base16/vivado_workspace/vivado_workspace.runs/synth_1/.Xil/Vivado-14188-NAV/realtime/mhsa_smartconnect_3_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'mhsa_smartconnect_3_0' (0#1) [C:/projects/vit_base16/vivado_workspace/vivado_workspace.runs/synth_1/.Xil/Vivado-14188-NAV/realtime/mhsa_smartconnect_3_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'S01_AXI_awready' of module 'mhsa_smartconnect_3_0' is unconnected for instance 'smartconnect_3' [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/synth/mhsa.v:435]
+WARNING: [Synth 8-7071] port 'S01_AXI_wready' of module 'mhsa_smartconnect_3_0' is unconnected for instance 'smartconnect_3' [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/synth/mhsa.v:435]
+WARNING: [Synth 8-7071] port 'S01_AXI_bid' of module 'mhsa_smartconnect_3_0' is unconnected for instance 'smartconnect_3' [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/synth/mhsa.v:435]
+WARNING: [Synth 8-7071] port 'S01_AXI_bresp' of module 'mhsa_smartconnect_3_0' is unconnected for instance 'smartconnect_3' [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/synth/mhsa.v:435]
+WARNING: [Synth 8-7071] port 'S01_AXI_buser' of module 'mhsa_smartconnect_3_0' is unconnected for instance 'smartconnect_3' [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/synth/mhsa.v:435]
+WARNING: [Synth 8-7071] port 'S01_AXI_bvalid' of module 'mhsa_smartconnect_3_0' is unconnected for instance 'smartconnect_3' [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/synth/mhsa.v:435]
+WARNING: [Synth 8-7071] port 'S01_AXI_arready' of module 'mhsa_smartconnect_3_0' is unconnected for instance 'smartconnect_3' [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/synth/mhsa.v:435]
+WARNING: [Synth 8-7071] port 'S01_AXI_rid' of module 'mhsa_smartconnect_3_0' is unconnected for instance 'smartconnect_3' [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/synth/mhsa.v:435]
+WARNING: [Synth 8-7071] port 'S01_AXI_rdata' of module 'mhsa_smartconnect_3_0' is unconnected for instance 'smartconnect_3' [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/synth/mhsa.v:435]
+WARNING: [Synth 8-7071] port 'S01_AXI_rresp' of module 'mhsa_smartconnect_3_0' is unconnected for instance 'smartconnect_3' [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/synth/mhsa.v:435]
+WARNING: [Synth 8-7071] port 'S01_AXI_rlast' of module 'mhsa_smartconnect_3_0' is unconnected for instance 'smartconnect_3' [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/synth/mhsa.v:435]
+WARNING: [Synth 8-7071] port 'S01_AXI_ruser' of module 'mhsa_smartconnect_3_0' is unconnected for instance 'smartconnect_3' [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/synth/mhsa.v:435]
+WARNING: [Synth 8-7071] port 'S01_AXI_rvalid' of module 'mhsa_smartconnect_3_0' is unconnected for instance 'smartconnect_3' [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/synth/mhsa.v:435]
+WARNING: [Synth 8-7023] instance 'smartconnect_3' of module 'mhsa_smartconnect_3_0' has 85 connections declared, but only 72 given [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/synth/mhsa.v:435]
+INFO: [Synth 8-6157] synthesizing module 'mhsa_smartconnect_4_0' [C:/projects/vit_base16/vivado_workspace/vivado_workspace.runs/synth_1/.Xil/Vivado-14188-NAV/realtime/mhsa_smartconnect_4_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'mhsa_smartconnect_4_0' (0#1) [C:/projects/vit_base16/vivado_workspace/vivado_workspace.runs/synth_1/.Xil/Vivado-14188-NAV/realtime/mhsa_smartconnect_4_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'M00_AXI_awprot' of module 'mhsa_smartconnect_4_0' is unconnected for instance 'smartconnect_4' [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/synth/mhsa.v:508]
+WARNING: [Synth 8-7071] port 'M00_AXI_arprot' of module 'mhsa_smartconnect_4_0' is unconnected for instance 'smartconnect_4' [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/synth/mhsa.v:508]
+WARNING: [Synth 8-7023] instance 'smartconnect_4' of module 'mhsa_smartconnect_4_0' has 60 connections declared, but only 58 given [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/synth/mhsa.v:508]
+INFO: [Synth 8-6157] synthesizing module 'mhsa_zynq_ultra_ps_e_0_0' [C:/projects/vit_base16/vivado_workspace/vivado_workspace.runs/synth_1/.Xil/Vivado-14188-NAV/realtime/mhsa_zynq_ultra_ps_e_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'mhsa_zynq_ultra_ps_e_0_0' (0#1) [C:/projects/vit_base16/vivado_workspace/vivado_workspace.runs/synth_1/.Xil/Vivado-14188-NAV/realtime/mhsa_zynq_ultra_ps_e_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'saxigp2_awready' of module 'mhsa_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/synth/mhsa.v:567]
+WARNING: [Synth 8-7071] port 'saxigp2_wready' of module 'mhsa_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/synth/mhsa.v:567]
+WARNING: [Synth 8-7071] port 'saxigp2_bid' of module 'mhsa_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/synth/mhsa.v:567]
+WARNING: [Synth 8-7071] port 'saxigp2_bresp' of module 'mhsa_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/synth/mhsa.v:567]
+WARNING: [Synth 8-7071] port 'saxigp2_bvalid' of module 'mhsa_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/synth/mhsa.v:567]
+WARNING: [Synth 8-7071] port 'saxigp2_rid' of module 'mhsa_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/synth/mhsa.v:567]
+WARNING: [Synth 8-7071] port 'saxigp3_awready' of module 'mhsa_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/synth/mhsa.v:567]
+WARNING: [Synth 8-7071] port 'saxigp3_wready' of module 'mhsa_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/synth/mhsa.v:567]
+WARNING: [Synth 8-7071] port 'saxigp3_bid' of module 'mhsa_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/synth/mhsa.v:567]
+WARNING: [Synth 8-7071] port 'saxigp3_bresp' of module 'mhsa_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/synth/mhsa.v:567]
+WARNING: [Synth 8-7071] port 'saxigp3_bvalid' of module 'mhsa_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/synth/mhsa.v:567]
+WARNING: [Synth 8-7071] port 'saxigp3_rid' of module 'mhsa_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/synth/mhsa.v:567]
+INFO: [Common 17-14] Message 'Synth 8-7071' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-7023] instance 'zynq_ultra_ps_e_0' of module 'mhsa_zynq_ultra_ps_e_0_0' has 202 connections declared, but only 177 given [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/synth/mhsa.v:567]
+INFO: [Synth 8-6155] done synthesizing module 'mhsa' (0#1) [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/synth/mhsa.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'mhsa_wrapper' (0#1) [C:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/hdl/mhsa_wrapper.v:13]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2193.766 ; gain = 347.992
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2193.766 ; gain = 347.992
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2193.766 ; gain = 347.992
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 2193.766 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/ip/mhsa_mhsa_top_0_0/mhsa_mhsa_top_0_0/mhsa_mhsa_top_0_0_in_context.xdc] for cell 'mhsa_i/mhsa_top_0'
+Finished Parsing XDC File [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/ip/mhsa_mhsa_top_0_0/mhsa_mhsa_top_0_0/mhsa_mhsa_top_0_0_in_context.xdc] for cell 'mhsa_i/mhsa_top_0'
+Parsing XDC File [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/ip/mhsa_zynq_ultra_ps_e_0_0/mhsa_zynq_ultra_ps_e_0_0/mhsa_zynq_ultra_ps_e_0_0_in_context.xdc] for cell 'mhsa_i/zynq_ultra_ps_e_0'
+Finished Parsing XDC File [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/ip/mhsa_zynq_ultra_ps_e_0_0/mhsa_zynq_ultra_ps_e_0_0/mhsa_zynq_ultra_ps_e_0_0_in_context.xdc] for cell 'mhsa_i/zynq_ultra_ps_e_0'
+Parsing XDC File [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/ip/mhsa_proc_sys_reset_0_0/mhsa_proc_sys_reset_0_0/mhsa_proc_sys_reset_0_0_in_context.xdc] for cell 'mhsa_i/proc_sys_reset_0'
+Finished Parsing XDC File [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/ip/mhsa_proc_sys_reset_0_0/mhsa_proc_sys_reset_0_0/mhsa_proc_sys_reset_0_0_in_context.xdc] for cell 'mhsa_i/proc_sys_reset_0'
+Parsing XDC File [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/ip/mhsa_smartconnect_0_0/mhsa_smartconnect_0_0/mhsa_smartconnect_0_0_in_context.xdc] for cell 'mhsa_i/smartconnect_0'
+Finished Parsing XDC File [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/ip/mhsa_smartconnect_0_0/mhsa_smartconnect_0_0/mhsa_smartconnect_0_0_in_context.xdc] for cell 'mhsa_i/smartconnect_0'
+Parsing XDC File [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/ip/mhsa_smartconnect_1_0/mhsa_smartconnect_1_0/mhsa_smartconnect_1_0_in_context.xdc] for cell 'mhsa_i/smartconnect_1'
+Finished Parsing XDC File [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/ip/mhsa_smartconnect_1_0/mhsa_smartconnect_1_0/mhsa_smartconnect_1_0_in_context.xdc] for cell 'mhsa_i/smartconnect_1'
+Parsing XDC File [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/ip/mhsa_smartconnect_2_0/mhsa_smartconnect_2_0/mhsa_smartconnect_2_0_in_context.xdc] for cell 'mhsa_i/smartconnect_2'
+Finished Parsing XDC File [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/ip/mhsa_smartconnect_2_0/mhsa_smartconnect_2_0/mhsa_smartconnect_2_0_in_context.xdc] for cell 'mhsa_i/smartconnect_2'
+Parsing XDC File [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/ip/mhsa_smartconnect_3_0/mhsa_smartconnect_3_0/mhsa_smartconnect_3_0_in_context.xdc] for cell 'mhsa_i/smartconnect_3'
+Finished Parsing XDC File [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/ip/mhsa_smartconnect_3_0/mhsa_smartconnect_3_0/mhsa_smartconnect_3_0_in_context.xdc] for cell 'mhsa_i/smartconnect_3'
+Parsing XDC File [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/ip/mhsa_smartconnect_4_0/mhsa_smartconnect_4_0/mhsa_smartconnect_4_0_in_context.xdc] for cell 'mhsa_i/smartconnect_4'
+Finished Parsing XDC File [c:/projects/vit_base16/vivado_workspace/vivado_workspace.gen/sources_1/bd/mhsa/ip/mhsa_smartconnect_4_0/mhsa_smartconnect_4_0/mhsa_smartconnect_4_0_in_context.xdc] for cell 'mhsa_i/smartconnect_4'
+Parsing XDC File [C:/projects/vit_base16/vivado_workspace/vivado_workspace.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/projects/vit_base16/vivado_workspace/vivado_workspace.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2199.539 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 2199.539 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 2199.539 ; gain = 353.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu7ev-ffvc1156-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 2199.539 ; gain = 353.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 2199.539 ; gain = 353.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 2199.539 ; gain = 353.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1728 (col length:144)
+BRAMs: 624 (col length: RAMB18 144 RAMB36 72)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 2206.324 ; gain = 360.551
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 2918.293 ; gain = 1072.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 2918.293 ; gain = 1072.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 2929.637 ; gain = 1083.863
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 3178.789 ; gain = 1333.016
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 3178.789 ; gain = 1333.016
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 3178.789 ; gain = 1333.016
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 3178.789 ; gain = 1333.016
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 3178.789 ; gain = 1333.016
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 3178.789 ; gain = 1333.016
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-------------------------+----------+
+|      |BlackBox name            |Instances |
++------+-------------------------+----------+
+|1     |mhsa_mhsa_top_0_0        |         1|
+|2     |mhsa_proc_sys_reset_0_0  |         1|
+|3     |mhsa_smartconnect_0_0    |         1|
+|4     |mhsa_smartconnect_1_0    |         1|
+|5     |mhsa_smartconnect_2_0    |         1|
+|6     |mhsa_smartconnect_3_0    |         1|
+|7     |mhsa_smartconnect_4_0    |         1|
+|8     |mhsa_zynq_ultra_ps_e_0_0 |         1|
++------+-------------------------+----------+
+
+Report Cell Usage: 
++------+-----------------------+------+
+|      |Cell                   |Count |
++------+-----------------------+------+
+|1     |mhsa_mhsa_top_0        |     1|
+|2     |mhsa_proc_sys_reset_0  |     1|
+|3     |mhsa_smartconnect_0    |     1|
+|4     |mhsa_smartconnect_1    |     1|
+|5     |mhsa_smartconnect_2    |     1|
+|6     |mhsa_smartconnect_3    |     1|
+|7     |mhsa_smartconnect_4    |     1|
+|8     |mhsa_zynq_ultra_ps_e_0 |     1|
++------+-----------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 3178.789 ; gain = 1333.016
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:28 . Memory (MB): peak = 3178.789 ; gain = 1327.242
+Synthesis Optimization Complete : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 3178.789 ; gain = 1333.016
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 3178.789 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3178.789 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 35fc7cf8
+INFO: [Common 17-83] Releasing license: Synthesis
+43 Infos, 105 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:40 ; elapsed = 00:00:58 . Memory (MB): peak = 3178.789 ; gain = 2546.656
+INFO: [Common 17-1381] The checkpoint 'C:/projects/vit_base16/vivado_workspace/vivado_workspace.runs/synth_1/mhsa_wrapper.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file mhsa_wrapper_utilization_synth.rpt -pb mhsa_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Aug 26 20:37:52 2026...

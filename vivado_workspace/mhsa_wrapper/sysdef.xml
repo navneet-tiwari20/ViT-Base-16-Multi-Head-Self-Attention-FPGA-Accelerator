@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<Project Version="1" Minor="7" DIGEST="">
+	<TOOL_VERSION Version="2025.2"/>
+	<MODE Name="Post-Synthesis"/>
+	<SYSTEMINFO BOARD="" PART="xczu7ev-ffvc1156-2-e" ARCH="zynquplus" PACKAGE="ffvc1156" DEVICE="xczu7ev" SPEED="-2"/>
+	<PART Name="xczu7ev-ffvc1156-2-e">
+		<SSIT IS_SSIT="0"/>
+		<NUM_OF_SLRS Value="1"/>
+	</PART>
+	<HIERARCHY Name="mhsa_wrapper"/>
+	<File Type="HW_HANDOFF" Name="mhsa.hwh" src_db="mhsa.hwdef" DESIGN_HIERARCHY="mhsa_i" BD_TYPE="DEFAULT_BD">
+	</File>
+	<File Type="BDA" Name="mhsa.bda" src_db="mhsa.hwdef">
+	</File>
+	<File Type="PS_FSBL_INIT" Name="psu_init.c" src_db="mhsa_zynq_ultra_ps_e_0_0.hwdef">
+	</File>
+	<File Type="PS_FSBL_INIT" Name="psu_init.h" src_db="mhsa_zynq_ultra_ps_e_0_0.hwdef">
+	</File>
+	<File Type="PS_FSBL_INIT_GPL" Name="psu_init_gpl.c" src_db="mhsa_zynq_ultra_ps_e_0_0.hwdef">
+	</File>
+	<File Type="PS_FSBL_INIT_GPL" Name="psu_init_gpl.h" src_db="mhsa_zynq_ultra_ps_e_0_0.hwdef">
+	</File>
+	<File Type="PS_INIT_HELP" Name="psu_init.html" src_db="mhsa_zynq_ultra_ps_e_0_0.hwdef">
+	</File>
+	<File Type="PS_XMD_INIT" Name="psu_init.tcl" src_db="mhsa_zynq_ultra_ps_e_0_0.hwdef">
+	</File>
+	<File Type="HW_HANDOFF" Name="mhsa_smartconnect_0_0.hwh" src_db="mhsa_smartconnect_0_0.hwdef" DESIGN_HIERARCHY="mhsa_smartconnect_0_0" BD_TYPE="SCOPED_BD">
+	</File>
+	<File Type="HW_HANDOFF" Name="mhsa_smartconnect_1_0.hwh" src_db="mhsa_smartconnect_1_0.hwdef" DESIGN_HIERARCHY="mhsa_smartconnect_1_0" BD_TYPE="SCOPED_BD">
+	</File>
+	<File Type="HW_HANDOFF" Name="mhsa_smartconnect_2_0.hwh" src_db="mhsa_smartconnect_2_0.hwdef" DESIGN_HIERARCHY="mhsa_smartconnect_2_0" BD_TYPE="SCOPED_BD">
+	</File>
+	<File Type="HW_HANDOFF" Name="mhsa_smartconnect_3_0.hwh" src_db="mhsa_smartconnect_3_0.hwdef" DESIGN_HIERARCHY="mhsa_smartconnect_3_0" BD_TYPE="SCOPED_BD">
+	</File>
+	<File Type="HW_HANDOFF" Name="mhsa_smartconnect_4_0.hwh" src_db="mhsa_smartconnect_4_0.hwdef" DESIGN_HIERARCHY="mhsa_smartconnect_4_0" BD_TYPE="SCOPED_BD">
+	</File>
+	<File Type="BIT" Name="mhsa_wrapper.bit" src_db="temp.hdf">
+	</File>
+	<DRIVERS>
+		<DRIVER IP_VLNV="xilinx.com:hls:mhsa_top:1.0">
+			<File PATH="drivers/mhsa_top_v1_0/data/mhsa_top.mdd"/>
+			<File PATH="drivers/mhsa_top_v1_0/data/mhsa_top.tcl"/>
+			<File PATH="drivers/mhsa_top_v1_0/data/mhsa_top.yaml"/>
+			<File PATH="drivers/mhsa_top_v1_0/src/CMakeLists.txt"/>
+			<File PATH="drivers/mhsa_top_v1_0/src/Makefile"/>
+			<File PATH="drivers/mhsa_top_v1_0/src/xmhsa_top.c"/>
+			<File PATH="drivers/mhsa_top_v1_0/src/xmhsa_top.h"/>
+			<File PATH="drivers/mhsa_top_v1_0/src/xmhsa_top_hw.h"/>
+			<File PATH="drivers/mhsa_top_v1_0/src/xmhsa_top_linux.c"/>
+			<File PATH="drivers/mhsa_top_v1_0/src/xmhsa_top_sinit.c"/>
+		</DRIVER>
+	</DRIVERS>
+	<USEDRESOURCES/>
+	<DESIGN_DATA Type="rm">
+		<DESIGN_IDS DESIGN_ID="0" PARENT_ID="0" NODE_ID="0"/>
+	</DESIGN_DATA>
+</Project>
+

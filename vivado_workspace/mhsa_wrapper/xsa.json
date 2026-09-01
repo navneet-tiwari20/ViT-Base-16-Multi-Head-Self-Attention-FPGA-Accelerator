@@ -1,0 +1,77 @@
+{
+    "versionMajor": "0",
+    "versionMinor": "0",
+    "usesPR": "false",
+    "platformState": "pre_synth",
+    "topModuleName": "mhsa_wrapper",
+    "acceleratorBinaryFormat": "xclbin2",
+    "acceleratorBinaryContent": "bitstream",
+    "validAcceleratorBinaryContentValues": "dcp,bitstream",
+    "dcpFunctionStripped": "false",
+    "dcpEncrypted": "false",
+    "defaultOutputType": "hw_export",
+    "designIntent": {
+        "dataCenter": {
+            "value": "false",
+            "explicit": "false"
+        },
+        "embedded": {
+            "value": "false",
+            "explicit": "false"
+        },
+        "externalHost": {
+            "value": "false",
+            "explicit": "false"
+        },
+        "serverManaged": {
+            "value": "false",
+            "explicit": "false"
+        }
+    },
+    "devices": [
+        {
+            "name": "fpga0",
+            "type": "8",
+            "fpgaPart": "zynquplus:xczu7ev:ffvc1156:-2:e",
+            "part": {
+                "name": "xczu7ev-ffvc1156-2-e",
+                "architecture": "zynquplus",
+                "device": "xczu7ev",
+                "package": "ffvc1156",
+                "speedGrade": "-2",
+                "tempGrade": "e"
+            },
+            "core": {
+                "name": "OCL_REGION_0",
+                "type": "clc_region",
+                "numComputeUnits": "60"
+            }
+        }
+    ],
+    "files": [
+        {
+            "name": "mhsa_wrapper.bit",
+            "type": "FULL_BIT"
+        }
+    ],
+    "vendor": "xilinx",
+    "description": "Vivado generated Hardware Platform",
+    "uniqueName": "xilinx:::0.0",
+    "fpgaPart": "zynquplus",
+    "fpgaDevice": "xczu7ev",
+    "unifiedPlatform": "true",
+    "expandablePlatform": "false",
+    "hardware": "true",
+    "softwareEmulation": "true",
+    "hardwareEmulation": "false",
+    "hardwareEmuPlatform": "false",
+    "usesNIFD": "false",
+    "generatedName": "Vivado",
+    "generatedVersion": "2025.2",
+    "generatedChangeList": "6299465",
+    "generatedIpChangeList": "6300035",
+    "generatedSharedDataChangeList": "6298862",
+    "generatedTimestamp": "Wed Aug 26 14:30:53 2026",
+    "idCode": "04a5a093"
+}
+

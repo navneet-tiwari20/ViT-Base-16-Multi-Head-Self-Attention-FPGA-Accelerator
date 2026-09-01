@@ -1,0 +1,162 @@
+<ENTRY>
+{
+ "thisFile": "C:/projects\\vit_base16\\vit_base16\\vit_base16\\vit_base16.hlsrun_csim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "08/26/26 15:45:06",
+ "timestampMillis": "1787739306619",
+ "buildStep": {
+  "cmdId": "b78729b4-f60f-4e4d-b945-581abdf5d2a4",
+  "name": "vitis-run",
+  "logFile": "C:/projects\\vit_base16\\vit_base16\\vit_base16\\logs\\vit_base16.steps.log",
+  "commandLine": "C:/AMDDesignTools/2025.2/Vitis/bin/unwrapped/win64.o/vitis-run.exe  --mode hls --csim --config C:\\projects\\vit_base16\\vit_base16\\hls_config.cfg --work_dir vit_base16 ",
+  "args": [
+   "--mode",
+   "hls",
+   "--csim",
+   "--config",
+   "C:\\projects\\vit_base16\\vit_base16\\hls_config.cfg",
+   "--work_dir",
+   "vit_base16"
+  ],
+  "iniFiles": [],
+  "cwd": "C:\\projects\\vit_base16\\vit_base16"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "08/26/26 15:45:06",
+ "timestampMillis": "1787739306621",
+ "status": {
+  "cmdId": "b78729b4-f60f-4e4d-b945-581abdf5d2a4",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "08/26/26 15:45:15",
+ "timestampMillis": "1787739315293",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_C_SIM",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "mhsa_top",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "C:/projects\\vit_base16\\vit_base16\\attention_config.h",
+     "C:/projects\\vit_base16\\vit_base16\\attention_top.cpp",
+     "C:/projects\\vit_base16\\vit_base16\\attention_top.h",
+     "C:/projects\\vit_base16\\vit_base16\\online_attention.h",
+     "C:/projects\\vit_base16\\vit_base16\\pwl_exp.h",
+     "C:/projects\\vit_base16\\vit_base16\\mhsa_top.h",
+     "C:/projects\\vit_base16\\vit_base16\\mhsa_top.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2025.2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "08/26/26 15:45:15",
+ "timestampMillis": "1787739315296",
+ "buildStep": {
+  "cmdId": "31b94755-93a4-468c-b133-ef6ebf1b2e28",
+  "name": "",
+  "logFile": "C:/projects\\vit_base16\\vit_base16\\vit_base16\\hls\\hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "C:\\projects\\vit_base16\\vit_base16"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "08/26/26 15:45:15",
+ "timestampMillis": "1787739315296",
+ "status": {
+  "cmdId": "31b94755-93a4-468c-b133-ef6ebf1b2e28",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "08/26/26 15:46:13",
+ "timestampMillis": "1787739373562",
+ "status": {
+  "cmdId": "31b94755-93a4-468c-b133-ef6ebf1b2e28",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "08/26/26 15:46:13",
+ "timestampMillis": "1787739373744",
+ "status": {
+  "cmdId": "b78729b4-f60f-4e4d-b945-581abdf5d2a4",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "08/26/26 15:46:13",
+ "timestampMillis": "1787739373747",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "08/26/26 15:46:13",
+ "timestampMillis": "1787739373747",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

@@ -1,0 +1,40 @@
+[
+  {
+    "directory": "C:\\projects\\vit_base16\\vit_base16",
+    "arguments": [
+      "C:\\AMDDesignTools\\2025.2\\Vitis\\win64\\tools\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=C:\\AMDDesignTools\\2025.2\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls",
+      "-hls-syn-headers-dir=C:\\AMDDesignTools\\2025.2\\Vitis\\common\\technology\\autopilot",
+      "-fhlstoplevel=mhsa_top",
+      "-c",
+      "C:\\projects\\vit_base16\\vit_base16\\attention_top.cpp"
+    ],
+    "file": "C:\\projects\\vit_base16\\vit_base16\\attention_top.cpp"
+  },
+  {
+    "directory": "C:\\projects\\vit_base16\\vit_base16",
+    "arguments": [
+      "C:\\AMDDesignTools\\2025.2\\Vitis\\win64\\tools\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=C:\\AMDDesignTools\\2025.2\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls",
+      "-hls-syn-headers-dir=C:\\AMDDesignTools\\2025.2\\Vitis\\common\\technology\\autopilot",
+      "-fhlstoplevel=mhsa_top",
+      "-c",
+      "C:\\projects\\vit_base16\\vit_base16\\mhsa_top.cpp"
+    ],
+    "file": "C:\\projects\\vit_base16\\vit_base16\\mhsa_top.cpp"
+  },
+  {
+    "directory": "C:\\projects\\vit_base16\\vit_base16",
+    "arguments": [
+      "C:\\AMDDesignTools\\2025.2\\Vitis\\win64\\tools\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=C:\\AMDDesignTools\\2025.2\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls-tb",
+      "-hls-sim-headers-dir=C:\\AMDDesignTools\\2025.2\\Vitis\\include",
+      "-c",
+      "C:\\projects\\vit_base16\\vit_base16\\tb_mhsa_top.cpp"
+    ],
+    "file": "C:\\projects\\vit_base16\\vit_base16\\tb_mhsa_top.cpp"
+  }
+]

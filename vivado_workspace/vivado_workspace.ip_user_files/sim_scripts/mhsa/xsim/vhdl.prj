@@ -1,0 +1,12 @@
+vhdl xil_defaultlib  \
+"../../../bd/mhsa/ip/mhsa_mhsa_top_0_0/hdl/ip/mhsa_top_fdiv_32ns_32ns_32_9_no_dsp_1_ip/sim/mhsa_top_fdiv_32ns_32ns_32_9_no_dsp_1_ip.vhd" \
+"../../../bd/mhsa/ip/mhsa_mhsa_top_0_0/hdl/ip/mhsa_top_fpext_32ns_64_2_no_dsp_1_ip/sim/mhsa_top_fpext_32ns_64_2_no_dsp_1_ip.vhd" \
+"../../../bd/mhsa/ip/mhsa_proc_sys_reset_0_0/sim/mhsa_proc_sys_reset_0_0.vhd" \
+"../../../bd/mhsa/ip/mhsa_smartconnect_0_0/bd_0/ip/ip_1/sim/bd_e223_psr_aclk_0.vhd" \
+"../../../bd/mhsa/ip/mhsa_smartconnect_1_0/bd_0/ip/ip_1/sim/bd_2272_psr_aclk_0.vhd" \
+"../../../bd/mhsa/ip/mhsa_smartconnect_2_0/bd_0/ip/ip_1/sim/bd_2282_psr_aclk_0.vhd" \
+"../../../bd/mhsa/ip/mhsa_smartconnect_3_0/bd_0/ip/ip_1/sim/bd_e2d3_psr_aclk_0.vhd" \
+"../../../bd/mhsa/ip/mhsa_smartconnect_4_0/bd_0/ip/ip_1/sim/bd_2362_psr_aclk_0.vhd" \
+
+# Do not sort compile order
+nosort

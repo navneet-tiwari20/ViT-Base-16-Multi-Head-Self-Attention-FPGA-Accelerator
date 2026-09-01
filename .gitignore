@@ -1,0 +1,34 @@
+# IDE
+_ide/
+.vscode/
+
+# Xilinx
+.Xil/
+.cache/
+.gen/
+.runs/
+.hw/
+.ip_user_files/
+
+# HLS generated
+.autopilot/
+**/hls/impl/
+**/hls/sim/
+**/hls/csim/
+
+# Vivado generated
+**/project.cache/
+**/project.gen/
+**/project.runs/
+**/project.hw/
+
+# Logs
+*.log
+*.jou
+*.str
+*.pb
+
+# Temporary
+*.tmp
+*.bak
+desktop.ini
